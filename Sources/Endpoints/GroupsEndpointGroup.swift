@@ -38,9 +38,9 @@ public class GroupsEndpointGroup: EndpointGroup {
          return object(for: apiRequest)
     }
 
-    public func getGroups(parameters: QueryParameters? = nil) -> Paginator<Project> {
+    public func getGroups(parameters: QueryParameters? = nil) -> Paginator<Group> {
          let apiRequest = APIRequest(path: Endpoints.groups.url, parameters: parameters)
-         let paginator = Paginator<Project>(communicator: hostCommunicator, apiRequest: apiRequest)
+         let paginator = Paginator<Group>(communicator: hostCommunicator, apiRequest: apiRequest)
          return paginator
     }
     
