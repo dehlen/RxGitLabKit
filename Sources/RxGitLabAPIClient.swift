@@ -106,6 +106,14 @@ public class RxGitLabAPIClient {
   public lazy var members: MembersEndpointGroup = {
     return createEndpointGroup()
   }()
+    
+  public lazy var groups: GroupsEndpointGroup = {
+    return createEndpointGroup()
+  }()
+    
+  public lazy var mergeRequests: MergeRequestsEndpointGroup = {
+    return createEndpointGroup()
+  }()
   
   // MARK: Init
   
