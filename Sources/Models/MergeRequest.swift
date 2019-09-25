@@ -31,7 +31,7 @@ public struct MergeRequest: Codable {
   public let forceRemoveSourceBranch: Bool?
   public let webURL: String?
   public let timeStats: TimeStats?
-  public let pipeline: LastPipeline
+  public let pipeline: LastPipeline?
   
   enum CodingKeys: String, CodingKey {
     case id, iid
